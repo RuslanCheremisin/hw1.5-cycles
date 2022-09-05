@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -53,16 +53,12 @@ public class Main {
     public static void taskHard5(){
         int fibonacci0 = 0;
         int fibonacci1 = 1;
-        int [] arr = new int[10];
-        int a = 0;
         for (int i=1; i<=5; i++){
-            arr[a] = fibonacci0;
-            a++;
+            System.out.print(fibonacci0+" ");
             fibonacci0 = fibonacci0+fibonacci1;
-            arr[a] = fibonacci1;
-            a++;
+            System.out.print(fibonacci1+" ");
             fibonacci1=fibonacci1+fibonacci0;
         }
-        System.out.println(Arrays.toString(arr));
+
     }
 }
