@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -51,12 +53,16 @@ public class Main {
     public static void taskHard5(){
         int fibonacci0 = 0;
         int fibonacci1 = 1;
+        int [] arr = new int[10];
+        int a = 0;
         for (int i=1; i<=5; i++){
-            System.out.println(fibonacci0);
+            arr[a] = fibonacci0;
+            a++;
             fibonacci0 = fibonacci0+fibonacci1;
-            System.out.println(fibonacci1);
+            arr[a] = fibonacci1;
+            a++;
             fibonacci1=fibonacci1+fibonacci0;
         }
-        System.out.println("\n");
+        System.out.println(Arrays.toString(arr));
     }
 }
